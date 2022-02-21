@@ -5,7 +5,7 @@ $WordNumber = 228
 $StartDate = "02/02/2022"
 $TodaysDate = get-date -format dd/MM/yyyy
 
-$WordCount = $wordnumber + (NEW-TIMESPAN -Start $StartDate -End $todaysDate).days
+$WordCount = $wordnumber + (NEW-TIMESPAN -Start $StartDate -End $todaysDate).days + 2
 
 write-output "The wordle word of the day is $($wordlist[$wordcount])"
 
